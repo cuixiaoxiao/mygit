@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiao.dactorforeverybody" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <!--登录-->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--注册-->
+        <activity android:name=".RegisterActivity"
+            >
+            <intent-filter>
+                <action android:name="android.RegisterActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--找密码-->
+        <activity android:name=".FindpwdActivity"
+            >
+            <intent-filter>
+                <action android:name="android..FindpwdActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+
+
+        <!--主界面-->
+        <!-- 1.首页 -->
+        <activity android:name=".DoctorForEverybody">
+            <intent-filter>
+                <action android:name="android.DoctorForEverybody.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--消息-->
+        <activity android:name=".MessageActivity">
+            <intent-filter>
+                <action android:name="android.MessageActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--聊天界面-->
+        <activity android:name=".ChatActivity">
+            <intent-filter>
+                <action android:name="android.ChatActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--自我诊断界面-->
+        <activity android:name=".DiagnoseActivity">
+            <intent-filter>
+                <action android:name="android.DiagnoseActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--时钟-->
+        <activity android:name="com.xiao.com.xiao.util.StartClock">
+            <intent-filter>
+                <action android:name="com.xiao.com.xiao.util.StartClock.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--计划详情界面-->
+        <activity android:name=".PlanInformationActivity">
+            <intent-filter>
+                <action android:name="android.PlanInformationActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--新闻资讯详情界面-->
+        <activity android:name=".HelthNewsInformationActivity">
+            <intent-filter>
+                <action android:name="android.HelthNewsInformationActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+
+
+
+
+        <!-- 2.问诊 -->
+
+
+        <!--搜索医生界面-->
+        <activity android:name=".InquiryDoctorActivity">
+            <intent-filter>
+                <action android:name="android.inquiryDoctorActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--医生详细信息界面-->
+        <activity android:name=".DoctorInformationActivity"
+            >
+            <intent-filter>
+                <action android:name="android.DoctorInformationActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 3.健康商城 -->
+
+
+
+
+
+
+
+        <!-- 4.我的 -->
+
+
+
+
+        <!--点击头像进入修改信息界面-->
+        <activity android:name=".OwnInforActivity">
+            <intent-filter>
+                <action android:name="android.OwnInforActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 病历夹 -->
+        <activity
+            android:name=".DossierActivity"
+            android:label="@string/title_activity_dossier"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.DossierActivity.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 添加病例 -->
+        <activity android:name=".AddDossierActivity">
+            <intent-filter>
+                <action android:name="android.AddDossierActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--病例详细信息-->
+        <activity android:name=".DossierInformationActivity">
+            <intent-filter>
+                <action android:name="android.DossierInformationActivity.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

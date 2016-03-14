@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/dossier_item_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-2-29"/>
+    <TextView
+        android:id="@+id/dossier_item_tv_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="感冒"/>
+</LinearLayout>
