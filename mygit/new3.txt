@@ -1,6 +1,2 @@
-Git is free software distributed under the GPL.
-<<<<<<< HEAD
+Git is free software distributed under the GPL
 master
-=======
-featurel
->>>>>>> featurel
